@@ -1,0 +1,170 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage[letterpaper,margin=0.55in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+\usepackage{enumitem}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle{Abhinav Pratik}{}{}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\noindent\href{mailto:pratikabhinav@gmail.com}{pratikabhinav\mbox{}@\mbox{}gmail.com}\sbull (+91)-704-271-9924\\
+601 Pavilion court 3A, Jaypee Greens Wish Town\sbull
+Sector 128\sbull Noida 201304\sbull Uttar Pradesh
+%Github: \href{https://github.com/pratikabhinav}{pratikabhinav}
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Education}
+
+\headedsection
+  {\href{}{Amity School of Engineering and Technology (ASET), Amity University}}
+  {\textsc{Noida, Uttar Pradesh}} {%
+  \headedsubsection
+    {Bachelor of Technology (B.Tech.)~in Computer Science}
+    {July~'14 -- May~'18} {}
+}
+
+
+
+\headedsection
+{\href{}{Delhi Public School}}
+{\textsc{Patna, India}} {%
+	\headedsubsection
+	{Senior Secondary (AISSCE, CBSE)}
+	{April~'14} {}
+
+	\headedsubsection
+	{Secondary (AISSE, CBSE)}
+	{April~'12} {}
+	
+}
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Selected Projects}
+\vspace{0.15cm}
+\begin{itemize}[labelindent=1.5em,labelsep=-0.3cm,leftmargin=*]
+\item \headedsubsection
+{A Pomodoro Timer}{{{Independent project}}}
+{\bodytext{Built a Pomodoro timer to improve productivity using HTML, Bootstrap, jQuery. Also created a \textbf{Chrome extension} for the same project.}}
+
+\item \headedsubsection
+{A "Find the Extra Smiley Face" Game}{{{May~'16 -- June~'16}}}
+{\bodytext{Created using HTML, DOM and Javascript, as part of HTML, CSS and JavaScript course offered by The Hong Kong University of Science and Technology.}}
+
+\item \headedsubsection
+{An Android App}{{{May~'15 -- June~'15}}}
+{\bodytext{Created a Calculator (SimpleCalc on PlayStore) that can add, subtract, multiply and divide two numbers with decimal accuracy. The app is packaged to be small (less than 1 MB) in size and requires no system permissions.}}
+
+\item \headedsubsection  % sets the header for the section and includes any subsections
+  {{\normalfont Built a minimalist 24-hour clock and a countdown timer that counts down in seconds, minutes, hours and days to any particular date you set, using pure Javascript concepts and CSS styling.}}{{{Independent Project}}}
+  %{\textsc{}}
+  
+\item \headedsubsection  % sets the header for the section and includes any subsections
+  {{\normalfont Solved close to 50 problems on Timus Online Judge (acm.timu.ru), the largest Russian archive of programming problems with automatic judging system. }}{{{Independent Project}}}
+  {\bodytext{Language used :~C++}}
+  %{\textsc{}}
+  
+\item \headedsubsection  % sets the header for the section and includes any subsections
+  {{\normalfont All my work can be found on my \textbf{GitHub} }}{{{GitHub}}}
+  {\bodytext{Link :~\textit{https://github.com/pratikabhinav}}}
+  %{\textsc{}}
+
+\end{itemize}
+
+\spacedhrule{0.5em}{-0.4em}
+\roottitle{Skills}
+{\bodytext{\textbf{Programming Languages}:~C/C++, Java}}
+{\bodytext{\textbf{Others}:~SQL, Python, Git, \LaTeX. HTML, CSS, Javascript, jQuery, Bootsrap, Wordpress  }}
+{\bodytext{\textbf{Platforms}:~Linux and Windows  }}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Trainings}
+\vspace{0.15cm}
+\begin{itemize}[labelindent=1.5em,labelsep=-0.3cm,leftmargin=*]
+\item \headedsubsection 
+    {Algorithms : Design and Analysis}{{{Jan~'17 -- March~'17}}}
+  %{\textsc{}}
+    {\bodytext{Prof.~Tim Roughgarden, Stanford University}}
+    
+\item \headedsubsection 
+    {HTML, CSS and Javascript}{{{May~'16 -- June~'16}}}
+  %{\textsc{}}
+    {\bodytext{Prof.~David Rossiter, The Hong Kong University of Science and Technology}}
+    
+\item \headedsubsection 
+    {Front-End Web UI Frameworks and Tools}{{{July~'16 -- August~'16}}}
+      %{\textsc{}}
+    {\bodytext{Prof.~Jogesh K. Muppala, The Hong Kong University of Science and Technology}}
+
+\item \headedsubsection 
+    {Full Stack Web Developer Specialization}{{{-- Ongoing}}}
+      %{\textsc{}}
+    {\bodytext{Prof.~Jogesh K. Muppala, Prof.~David Rossiter, The Hong Kong University of Science and Technology}}
+
+
+\item \headedsubsection  % sets the header for the section and includes any subsections
+  {{\normalfont Advanced's C++ through Bo Qian's YouTube channel. Bo Qian is a Software Engineer at Apple with with over 9 years experience in Object oriented software development. He masters firm command over C++ }}{{{November~'16 -- Jan~'17}}}
+  %{\textsc{}}
+  
+\end{itemize}
+
+
+\spacedhrule{0.5em}{-0.4em}
+
+\roottitle{Additional Activities}
+\vspace{0.15cm}
+\begin{itemize}[labelindent=1.5em,labelsep=-0.3cm,leftmargin=*]
+
+\item \headedsubsection 
+{\href{}{\normalfont Participated in several Online Programming Contests.
+}}{{{}}}
+
+
+\item \headedsubsection 
+{\href{}{\normalfont MOOC (Massive Open Online Courses) enthusiast with 5 Certificates of Accomplishments on Coursera.
+}}{{{}}}
+
+\item \headedsubsection 
+{\href{}{\normalfont Served as a \textbf{Student Mentor} for the CSE Department freshers. Helped them get acquainted
+with the college studies and environment.
+}}{{{}}}
+
+\item \headedsubsection {\normalfont Captain of the High School Football Team at various Inter-school tournaments.}{{{ 2012-14}}}
+
+\end{itemize}
+
+\end{document}
