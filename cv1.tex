@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 %
 % LaTeX source of my resume
 % =========================
@@ -69,14 +68,14 @@ Apartment C103\sbull Gainesville\sbull Florida 32608
   {\textsc{Gainesville, Florida}} {%
   \headedsubsection
     {Master of Science in Computer Science }
-    {August~'18 -- December~'19} {}
+    {August~'18 -- Ongoing} {}
 }
 
 \headedsection
   {\href{}{Herbert Wertheim College of Engineering, University of Florida}}
   {\textsc{Gainesville, Florida}} {%
   \headedsubsection
-    {Computer Science Senior Certificate Student}
+    {Computer Science Senior Certificate Student\sbull GPA : 3.58 / 4.0}
     {January~'18 -- May~'18} {}
 }
 
@@ -84,7 +83,7 @@ Apartment C103\sbull Gainesville\sbull Florida 32608
   {\href{}{Amity School of Engineering and Technology (ASET), Amity University}}
   {\textsc{Noida, Uttar Pradesh}} {%
   \headedsubsection
-    {Bachelor of Technology (B.Tech.)~in Computer Science}
+    {Bachelor of Technology (B.Tech.)~in Computer Science\sbull GPA : 7.31 / 10.0 }
     {July~'14 -- May~'18} {}
 }
 
@@ -227,228 +226,4 @@ with the college studies and environment.
 
 \end{itemize}
 
-=======
-%
-% LaTeX source of my resume
-% =========================
-%
-% Heavily commented to to fit even LaTeX beginners (hopefully).
-%
-% See the `README.md` file for more info.
-%
-% This file is licensed under the CC-NC-ND Creative Commons license.
-%
-
-
-% Start a document with the here given default font size and paper size.
-\documentclass[10pt,a4paper]{article}
-
-% Set the page margins.
-\usepackage[letterpaper,margin=0.55in]{geometry}
-
-% Setup the language.
-\usepackage[english]{babel}
-\hyphenation{Some-long-word}
-
-% Makes resume-specific commands available.
-\usepackage{resume}
-
-\usepackage{enumitem}
-
-\begin{document}  % begin the content of the document
-\sloppy  % this to relax whitespacing in favour of straight margins
-
-
-% title on top of the document
-\maintitle{Abhinav Pratik}{}{}
-
-\nobreakvspace{0.3em}  % add some page break averse vertical spacing
-
-% \noindent prevents paragraph's first lines from indenting
-% \mbox is used to obfuscate the email address
-% \sbull is a spaced bullet
-% \href well..
-% \\ breaks the line into a new paragraph
-\noindent\href{mailto:pratikabhinav@gmail.com}{pratikabhinav\mbox{}@\mbox{}gmail.com}\sbull (+91)-704-271-9924\\
-1602 Pavilion Height 1, Jaypee Greens Wish Town\sbull
-Sector 128\sbull Noida 201304\sbull Uttar Pradesh
-%Github: \href{https://github.com/pratikabhinav}{pratikabhinav}
-\spacedhrule{0.5em}{-0.4em}
-
-\roottitle{Experience}
-
-\headedsection  % sets the header for the section and includes any subsections
-  {\href{}{\textbf{Zenterior Technology Solutions Pvt. Ltd.}}}
-  {\textsc{Chennai, India}}
-  {%
-  \headedsubsection
-    {Intern - Full Stack Developer}
-    {May~'17 -- June~'17}
-    {\bodytext{
-    \begin{itemize}
-    \item Ported the company's website to both Android and iOS platforms as an app. I used hybrid mobile app development using ionic framework and Cordova plugins to complete the project. Ionic and Cordova allows us to leverage web technologies such as HTML, CSS, Javascript, AngularJS etc to create mobile apps. 
-    \end{itemize}
-}}
-}
-
-\roottitle{Education}
-
-\headedsection
-  {\href{}{Herbert Wertheim College of Engineering, University of Florida}}
-  {\textsc{Gainesville, Florida}} {%
-  \headedsubsection
-    {Computer Science Senior Certificate Student}
-    {January~'18 -- May~'18} {}
-}
-
-\headedsection
-  {\href{}{Amity School of Engineering and Technology (ASET), Amity University}}
-  {\textsc{Noida, Uttar Pradesh}} {%
-  \headedsubsection
-    {Bachelor of Technology (B.Tech.)~in Computer Science}
-    {July~'14 -- May~'18} {}
-}
-
-
-
-\headedsection
-{\href{}{Delhi Public School}}
-{\textsc{Patna, India}} {%
-  \headedsubsection
-  {Senior Secondary (AISSCE, CBSE)}
-  {April~'14} {}
-
-  \headedsubsection
-  {Secondary (AISSE, CBSE)}
-  {April~'12} {}
-  
-}
-
-\spacedhrule{0.5em}{-0.4em}
-
-\roottitle{Selected Projects}
-\vspace{0.15cm}
-\begin{itemize}[labelindent=1.5em,labelsep=-0.3cm,leftmargin=*]
-
-\item \headedsubsection
-{A Real-Time Social Blog}{{{College minor project}}}
-{\bodytext{A micro blog with trending posts and upvotes feature for the students of my college that would them stay in touch with all the events in the entire University. The project was developed using MEAN stack. }}
-
-\item \headedsubsection
-{A Movies and TV Shows Information Website}{{{Independent project}}}
-{\bodytext{A JavaScript/jQuery app designed using Bootstrap CSS and HTMl, that fetches movie / tv show data from the OMDb API. The requests to the API are made using Axios NPM, which is a promise based HTTP client for the browser and node.js.}}
-
-\item \headedsubsection
-{A Chat Web App}{{{Independent project}}}
-{\bodytext{Created a material designed, minimal chat web app, using the Firebase platform that syncs data using the Firebase Realtime Database and Cloud Storage. Users need to sign in using Firebase Google Auth and can interact with each other through text messages and images.}}
-
-\item \headedsubsection
-{A Pomodoro Timer}{{{Independent project}}}
-{\bodytext{Built a versatile Pomodoro timer \textbf{Chrome extension} to improve productivity. The extension also has options for a custom timer and a "50-10" timer. Also created a web version of the Pomodoro timer using HTML, CSS and jQuery. }}
-
-\item \headedsubsection
-{A To-Do App}{{{Independent project}}}
-{\bodytext{Built a simplistic To-Do app using web technologies to increase personal productivity. I use the app everyday to maintain a list of tasks I need to get done on the same day. }}
-
-\item \headedsubsection
-{A "Find the Extra Smiley Face" Game}{{{May~'16 -- June~'16}}}
-{\bodytext{Created using HTML, DOM and Javascript, as part of HTML, CSS and JavaScript course offered by The Hong Kong University of Science and Technology.}}
-
-\item \headedsubsection
-{An Android App}{{{May~'15 -- June~'15}}}
-{\bodytext{Created a Calculator (SimpleCalc on PlayStore) that can add, subtract, multiply and divide two numbers with decimal accuracy. The app is packaged to be small (less than 1 MB) in size and requires no system permissions.}}
-
-\item \headedsubsection  % sets the header for the section and includes any subsections
-  {{\normalfont Solved close to 100 problems on various online programming platforms like Timus Online Judge (acm.timu.ru), Codechef, Spoj and InterviewBit. }}{{{Independent Project}}}
-  {\bodytext{Language used :~C++}}
-  %{\textsc{}}
-  
-\item \headedsubsection  % sets the header for the section and includes any subsections
-  {{\normalfont My \textbf{GitHub} }}{{{GitHub}}}
-  {\bodytext{Link :~\textit{https://github.com/pratikabhinav}}}
-  %{\textsc{}}
-
-\end{itemize}
-
-\spacedhrule{0.5em}{-0.4em}
-\roottitle{Skills}
-{\bodytext{\textbf{Programming Languages}:~C/C++, Java}}
-{\bodytext{\textbf{Others}:~SQL, Python, Git, \LaTeX. HTML, CSS, Javascript, Angular, jQuery, Bootsrap, Ionic, Cordova, MEAN stack, Wordpress  }}
-{\bodytext{\textbf{Platforms}:~Linux and Windows  }}
-
-
-\spacedhrule{0.5em}{-0.4em}
-
-\roottitle{Trainings}
-\vspace{0.15cm}
-\begin{itemize}[labelindent=1.5em,labelsep=-0.3cm,leftmargin=*]
-\item \headedsubsection 
-    {Algorithms : Design and Analysis}{{{Jan~'17 -- March~'17}}}
-  %{\textsc{}}
-    {\bodytext{Prof.~Tim Roughgarden, Stanford University}}
-    
-\item \headedsubsection 
-    {Full Stack Web Developer Specialization}{{{May~'16 -- January~'17}}}
-      %{\textsc{}}
-    {\bodytext{Prof.~Jogesh K. Muppala, Prof.~David Rossiter, The Hong Kong University of Science and Technology}}
-    
-\item \headedsubsection 
-    {Server-side Development with NodeJS}{{{December~'16 -- January~'17}}}
-      %{\textsc{}}
-    {\bodytext{Prof.~Jogesh K. Muppala, The Hong Kong University of Science and Technology}}
-
-\item \headedsubsection 
-    {Multiplatform Mobile App Development with Web Technologies}{{{November~'16 -- December~'16}}}
-      %{\textsc{}}
-    {\bodytext{Prof.~Jogesh K. Muppala, The Hong Kong University of Science and Technology}}
-    
-\item \headedsubsection 
-    {Front-End JavaScript Frameworks: AngularJS}{{{September~'16 -- October~'16}}}
-      %{\textsc{}}
-    {\bodytext{Prof.~Jogesh K. Muppala, The Hong Kong University of Science and Technology}}
-    
-\item \headedsubsection 
-    {Front-End Web UI Frameworks and Tools}{{{July~'16 -- August~'16}}}
-      %{\textsc{}}
-    {\bodytext{Prof.~Jogesh K. Muppala, The Hong Kong University of Science and Technology}}
-    
-
-\item \headedsubsection 
-    {HTML, CSS and Javascript}{{{May~'16 -- June~'16}}}
-  %{\textsc{}}
-    {\bodytext{Prof.~David Rossiter, The Hong Kong University of Science and Technology}}
-    
-
-\item \headedsubsection  % sets the header for the section and includes any subsections
-  {{\normalfont Advanced's C++ through Bo Qian's YouTube channel. Bo Qian is a Software Engineer at Apple with with over 9 years experience in Object oriented software development. He masters firm command over C++ }}{{{November~'16 -- Jan~'17}}}
-  %{\textsc{}}
-  
-\end{itemize}
-
-
-\spacedhrule{0.5em}{-0.4em}
-
-\roottitle{Additional Activities}
-\vspace{0.15cm}
-\begin{itemize}[labelindent=1.5em,labelsep=-0.3cm,leftmargin=*]
-
-\item \headedsubsection 
-{\href{}{\normalfont Participated in several Online Programming Contests.
-}}{{{}}}
-
-
-\item \headedsubsection 
-{\href{}{\normalfont MOOC (Massive Open Online Courses) enthusiast with 8 Certificates of Accomplishments on Coursera.
-}}{{{}}}
-
-\item \headedsubsection 
-{\href{}{\normalfont Served as a \textbf{Student Mentor} for the CSE Department freshers. Helped them get acquainted
-with the college studies and environment.
-}}{{{}}}
-
-\item \headedsubsection {\normalfont Captain of the High School Football Team at various Inter-school tournaments.}{{{ 2012-14}}}
-
-\end{itemize}
-
->>>>>>> 35cbcad21389e52340908e9ced9cb279f668107c
 \end{document}
